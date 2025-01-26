@@ -38,7 +38,7 @@ if not db_uri:
     st.info("Please enter the database information and uri")
 
 
-llm =ChatGroq(groq_api_key=api_key,model_name="llama-3.3-70b-versatile")
+llm =ChatGroq(groq_api_key=api_key,model_name='llama-3.3-70b-specdec')
 
 @st.cache_resource(ttl='2h')
 def configue_db(db_uri,mysql_host=None,mysql_user=None,mysql_password=None,mysql_db=None):
